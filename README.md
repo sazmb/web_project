@@ -170,7 +170,3 @@ Authenticated user routes:
    ```bash
    git push -u origin main
    ```
-
-## License
-
-This project is licensed under the MIT License.
