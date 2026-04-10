@@ -1,0 +1,43 @@
+Utilizzo di laravel:
+
+nel file env:
+DB_CONNECTION=sqlite
+# DB_HOST=127.0.0.1    ->info per connnettersi al db
+# DB_PORT=3306          
+# DB_DATABASE=laravel
+# DB_USERNAME=root
+# DB_PASSWORD=
+: sono le info di connessione, nell'attuale .env le ho modificate in base al db creato in phpAdmin
+
+: impostare i dati login aggiungendo utente in database in phpAdmin e modificare env
+
+: ora ho il problema che vedo lo stack dell'errore quando provo a connetermi al sito -> in env cambio campo debugh a false
+
+-------------------------------------------------------------
+: devo inserire le cartelle con tutte le info se no larvel no va
+per far questo devo usare il comando "php artisan migrate" 
+in questo modo posso uasere un sacco di librerie gia definite
+
+lo utilezzero anche per spostarmi sulle mie tabelle
+
+quando creo larvel è meglio usare:
+ Breeze per autenticazione utente e
+    
+ Sanctum per autenticazione api
+
+
+%%%%% NOTA PER ESAME
+il materiale fornito manca della dir vendor, basta che uso comaando composer update che mi scarica quello che manca
+(quando devo usare laravel)
+
+- rotta parlante ?? non utilizzare plainstring (scrivere URL come path non come script.php?=id)
+
+
+-BLADE
+    creati un layout e nelle viste poi vai a specificarlo
+    in certi punti layout è utile mettere dei place holder e poi riempirlo nelel viste specificarlo
+    layout in Blade è una vista come le altre
+    non è necessario stia nella cartella layouts
+
+-STATICO
+metto tutte le pagine html e immagini in public
